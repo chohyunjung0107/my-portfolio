@@ -31,10 +31,12 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        {/* 헤더 영역  */}
-        <HeaderComponent />
-        {/* 컨텐츠 영역  */}
-        <Contents>{children}</Contents>
+        <div className="w-[100vw] flex flex-col items-center">
+          {/* 헤더 영역  */}
+          <HeaderComponent />
+          {/* 컨텐츠 영역  */}
+          <Contents>{children}</Contents>
+        </div>
       </body>
     </html>
   );
